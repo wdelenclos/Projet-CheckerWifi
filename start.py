@@ -16,12 +16,3 @@ while True:
   sense.load_image("wifi.png")
   time.sleep(60.0 - ((time.time() - starttime) % 60.0))
 
-# --- Fin
-
-except KeyboardInterrupt:
-    sense.load_image("close.png")
-    print "Script terminé"
-    try:
-        sys.exit(0)
-    except SystemExit:
-        os._exit(0)
