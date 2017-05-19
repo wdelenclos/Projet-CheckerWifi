@@ -13,7 +13,9 @@ sense = SenseHat()
 
 p = subprocess.Popen(["ps", "-a"], stdout=subprocess.PIPE)
 out, err = p.communicate()
-if ('hostapd' in out):
-    sense.load_image("wifi.png")
-else:
-     sense.load_image("close.png")
+
+while True:
+    if ('Httpd' in out):
+        sense.load_image("wifi.png")
+    else:
+         sense.load_image("close.png")
