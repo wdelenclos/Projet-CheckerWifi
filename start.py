@@ -12,7 +12,7 @@ sense = SenseHat()
 print "\n\n\n############# Bonjour Wladimir ###########"
 
 while True:
-  os.system('python script.py')
+  os.system('python cf-ddns.py')
   sense.load_image("wifi.png")
   time.sleep(60.0 - ((time.time() - starttime) % 60.0))
 
