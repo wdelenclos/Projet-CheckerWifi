@@ -5,9 +5,6 @@ import subprocess
 import time
 starttime=time.time()
 
-# --- Demarrage
-sense = SenseHat()
-
 print "\n\n\n############# Script d'actualisation des DNS de dev.wdelenclos.fr ###########"
 i = 0
 
