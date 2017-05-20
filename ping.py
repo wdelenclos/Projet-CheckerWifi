@@ -7,7 +7,7 @@ import httplib
 
 red = (255, 0, 0)
 green = (0, 255, 0)
-hostname = "dhv.wdelenclos.fr"
+hostname = "http://dhv.wdelenclos.fr"
 
 
 starttime=time.time()
