@@ -23,11 +23,11 @@ while True:
 
     if r1.status == 200:
       sense.show_message("OK", text_colour=green)
-      print hostname, ' actif !'
+      print url, ' actif !'
       sense.load_image("done.png")
     else:
       sense.show_message("HS", text_colour=red)
-      print hostname, 'INACTIF'
+      print url, 'INACTIF'
       sense.load_image("erreur.png")
 
     print "Prochaine verification dans 60s  \n"
