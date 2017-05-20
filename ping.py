@@ -7,14 +7,16 @@ import httplib
 
 red = (255, 0, 0)
 green = (0, 255, 0)
-hostname = "dev.wdelenclos.fr"
+hostname = "dhv.wdelenclos.fr"
+
+
 starttime=time.time()
 
 while True:
     c = httplib.HTTPConnection(hostname)
     c.request("HEAD", '')
     sense.load_image("hello.png")
-    time.sleep(2)
+
     if c.getresponse().status == 200:
       sense.show_message("OK", text_colour=green)
       print hostname, ' actif !'
