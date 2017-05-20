@@ -6,7 +6,7 @@ import time
 
 red = (255, 0, 0)
 green = (0, 255, 0)
-hostname = "dev.wdetttgthhtlenclos.fr"
+hostname = "dev.wdelenclos.fr"
 starttime=time.time()
 
 while True:
