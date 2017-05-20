@@ -4,7 +4,7 @@ sense.set_rotation(180)
 import os
 import time
 
-hostname = "wdelenclos.fr"
+hostname = "dev.wdelenclos.fr"
 starttime=time.time()
 
 while True:
