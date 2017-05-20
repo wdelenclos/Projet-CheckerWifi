@@ -1,5 +1,6 @@
+from sense_hat import SenseHat
+sense = SenseHat()
 import os
-from sense_hat import SenseHats
 
 hostname = "wdelenclos.fr"
 
