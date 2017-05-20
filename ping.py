@@ -8,7 +8,7 @@ import urlparse
 
 red = (255, 0, 0)
 green = (0, 255, 0)
-url = "http://dei.wdelenclos.fr/"
+url = "http://dev.wdelenclos.fr/"
 
 
 starttime=time.time()
