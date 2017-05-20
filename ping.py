@@ -5,6 +5,7 @@ import os
 import time
 
 hostname = "wdelenclos.fr"
+starttime=time.time()
 
 while True:
     response = os.system("ping -c 1 " + hostname)
