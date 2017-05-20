@@ -30,5 +30,5 @@ while True:
       print url, 'INACTIF'
       sense.load_image("erreur.png")
 
-    print "Prochaine verification dans ",  wait , "\n"
+    print "Prochaine verification dans", wait , "s \n"
     time.sleep(wait)
