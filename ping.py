@@ -9,7 +9,7 @@ import urlparse
 red = (255, 0, 0)
 green = (0, 255, 0)
 url = "http://dev.wdelenclos.fr/"
-
+wait = 120
 
 starttime=time.time()
 
@@ -30,5 +30,5 @@ while True:
       print url, 'INACTIF'
       sense.load_image("erreur.png")
 
-    print "Prochaine verification dans 60s  \n"
-    time.sleep(60.0 - ((time.time() - starttime) % 60.0))
+    print "Prochaine verification dans ",  wait , "\n"
+    time.sleep(wait)
