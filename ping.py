@@ -10,7 +10,7 @@ starttime=time.time()
 while True:
     response = os.system("ping -c 1 " + hostname)
     sense.load_image("hello.png")
-    time.sleep(2))
+    time.sleep(2)
     if response == 0:
       show_message("OK", text_colour=green)
       print hostname, ' actif !'
