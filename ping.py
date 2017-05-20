@@ -4,20 +4,24 @@ sense.set_rotation(180)
 import os
 import time
 import httplib
+import urlparse
 
 red = (255, 0, 0)
 green = (0, 255, 0)
-hostname = "wdrenclos.fr"
+url = "http://dev.wdelenclos.fr/"
 
 
 starttime=time.time()
 
 while True:
-    c = httplib.HTTPConnection(hostname)
-    c.request("HEAD", '')
     sense.load_image("hello.png")
+    o = urlparse.urlparse(url)
+    conn = httplib.HTTPConnection(o.netloc)
+    conn.request("GET",'')
+    r1 = conn.getresponse()
 
-    if c.getresponse().status == 200:
+
+    if r1.status == 200:
       sense.show_message("OK", text_colour=green)
       print hostname, ' actif !'
       sense.load_image("done.png")
