@@ -4,8 +4,8 @@ from sense_hat import SenseHats
 hostname = "wdelenclos.fr"
 
 while True:
-response = os.system("ping -c 1 " + hostname)
-sense.load_image("hello.png")
+    response = os.system("ping -c 1 " + hostname)
+    sense.load_image("hello.png")
 
     if response == 0:
       print hostname, 'is up!'
